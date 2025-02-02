@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio site showcasing projects and skills.">
-    <meta name="author" content="Akhil Kalakota">
+    <meta name="author" content="Your Name">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { border: 1px solid black; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Akhil's Portfolio</h1>
+        <hgroup>
+            <h1>Your Name's Portfolio</h1>
+            <h2>Welcome to My Professional Space</h2>
+        </hgroup>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,42 +27,42 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>This site showcases my projects, resume, and ways to contact me.</p>
+            <h2>Introduction</h2>
+            <p>Welcome to my portfolio! Here, you'll find information about my <strong>projects</strong>, <em>skills</em>, and <b>experiences</b>.</p>
+            <figure>
+                <img src="profile.jpg" alt="Profile Picture">
+                <figcaption>My professional photo.</figcaption>
+            </figure>
         </section>
-        
+
         <section>
-            <h2>Highlighted Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Description of project 1.</li>
-                <li><strong>Project 2:</strong> Description of project 2.</li>
-                <li><strong>Project 3:</strong> Description of project 3.</li>
-            </ul>
+            <h2>Code Snippet Example</h2>
+            <pre><code>console.log('Hello, World!');</code></pre>
         </section>
+
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="resume.html">View My Resume</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+        </aside>
     </main>
-    
-    <aside>
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="resume.html">View My Resume</a></li>
-            <li><a href="contact.html">Get in Touch</a></li>
-        </ul>
-    </aside>
-    
+
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-        <address>Contact: <a href="mailto:your.akhilkalakota@gmail.com">your.email@example.com</a></address>
+        <hr>
+        <address>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></address>
     </footer>
-    
+
     <custom-hello-world></custom-hello-world>
-    
+
     <template id="hello-world-template">
         <p>Hello, World!</p>
     </template>
-    
+
     <script>
         class HelloWorld extends HTMLElement {
             connectedCallback() {
@@ -68,4 +74,3 @@
     </script>
 </body>
 </html>
-
