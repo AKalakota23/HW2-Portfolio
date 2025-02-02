@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio site showcasing projects and skills.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Akhil Kalakota">
+    <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript">
+    <meta property="og:title" content="Akhil's Portfolio">
+    <meta property="og:description" content="Portfolio site showcasing projects and skills.">
+    <meta property="og:image" content="pfp.jpg">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body { border: 1px solid black; }
-        img {
-        width: 150px;
-        height: auto;
-        border: 1px solid black;
-    }
+        img { width: 150px; height: auto; }
+        custom-semantic-element {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -34,18 +40,30 @@
     </header>
 
     <main>
+        <search>
+            <form action="/search">
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="q">
+                <button type="submit">Go</button>
+            </form>
+        </search>
+
         <section>
             <h2>Introduction</h2>
             <p>Welcome to my portfolio! Here, you'll find information about my <strong>projects</strong>, <em>skills</em>, and <b>experiences</b>.</p>
             <figure>
-                <img src="pfp.jpg" alt="Profile Picture">
-                <figcaption>My photo.</figcaption>
+                <picture>
+                    <source srcset="pfp.webp" type="image/webp">
+                    <img src="pfp.jpg" alt="Profile Picture">
+                </picture>
+                <figcaption>My photo <cite>Taken by professional photographer</cite></figcaption>
             </figure>
         </section>
 
         <section>
             <h3>Code Snippet Example</h3>
             <pre><code>console.log('Hello, World!');</code></pre>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p>
         </section>
 
         <aside>
@@ -55,15 +73,39 @@
                 <li><a href="contact.html">Get in Touch</a></li>
             </ul>
         </aside>
+
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+
+        <custom-semantic-element>
+            This is a custom semantic element with special styling!
+        </custom-semantic-element>
+
+        <blockquote>
+            <p>"E=mc<sup>2</sup>"</p>
+            <footer>- Albert Einstein</footer>
+        </blockquote>
+
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
     </main>
 
     <footer>
         <hr>
         <address>Contact: <a href="mailto:akhilkalakota@gmail.com">akhilkalakota@gmail.com</a></address>
+        <small>&copy; 2024 Akhil Kalakota</small>
     </footer>
 
     <custom-hello-world></custom-hello-world>
-
     <template id="hello-world-template">
         <p>Hello, World!</p>
     </template>
@@ -76,6 +118,12 @@
             }
         }
         customElements.define("custom-hello-world", HelloWorld);
+
+        // Canvas drawing
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(10, 10, 50, 50);
     </script>
 </body>
 </html>
