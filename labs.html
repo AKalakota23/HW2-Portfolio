@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experimental Lab</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="labs.html">Labs</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Experimental Lab</h1>
+        
+        <!-- Missing Elements Section -->
+        <section>
+            <h2>HTML Element Showcase</h2>
+            
+            <!-- Text Formatting -->
+            <div class="text-formatting">
+                <p>This is a <span style="color: blue">span element</span> inside a div</p>
+                <p>Line<br>break with br</p>
+                <p><b>Bold text</b>, <i>italic text</i>, <strong>strong text</strong>, <em>emphasized text</em></p>
+            </div>
+
+            <!-- Progress & Meter -->
+            <progress value="75" max="100"></progress>
+            <meter value="6" min="0" max="10">6 out of 10</meter>
+
+            <!-- Iframe -->
+            <iframe width="300" height="200" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Sample video">
+            </iframe>
+
+            <!-- Ruby Annotation -->
+            <ruby>
+                漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                字 <rp>(</rp><rt>Ji</rt><rp>)</rp>
+            </ruby>
+
+            <!-- Image Map -->
+            <map name="labmap">
+                <area shape="rect" coords="0,0,50,50" href="#">
+            </map>
+            <img usemap="#labmap" src="lab-map.jpg" alt="Lab map">
+
+            <!-- Bidirectional Text -->
+            <bdi>إيان</bdi>
+            <bdo dir="rtl">This text is reversed</bdo>
+
+            <!-- Embedded PDF -->
+            <object data="sample.pdf" type="application/pdf" width="300" height="200">
+                <param name="view" value="fit">
+            </object>
+        </section>
+
+        <!-- Form Experiments -->
+        <section>
+            <h2>Form Elements</h2>
+            <form>
+                <label>Search: <input list="datalist-options"></label>
+                <datalist id="datalist-options">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                </datalist>
+                
+                <output name="result">0</output>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <small>Experimental content - may not work in all browsers</small>
+    </footer>
+</body>
+</html>
