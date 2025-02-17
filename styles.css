@@ -185,7 +185,7 @@ picture img {
 section:has(h2) h2 {
     background-color: #033605;    
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-    padding: 10px 15px;
+    padding: 7px 12px;
     margin: 10px 0;
     
 
