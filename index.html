@@ -25,19 +25,18 @@
 <body>
     <header>
         <hgroup>
-            <h1>Akhil's Portfolio</h1>
-            <canvas id="myCanvas" width="1000" height="20"></canvas>
-
-            <h2><span style ="color:red">Welcome to My Personal Domain</span></h2>
+            <h1><span style ="color:red">Welcome to My Personal Domain</span></h1>
         </hgroup>
-        <nav>
+            <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="labs.html">Labs</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -56,18 +55,15 @@
             <p>Welcome to my portfolio! Here, you'll find information about my <strong>projects</strong>, <em>skills</em>, and <b>experiences</b>.</p>
             <figure>
                 <picture>
-                    <source srcset="images/pfp.jpg" type="image/jpg">
-                    <img src="images/pfp.jpg" alt="Profile Picture">
+                    <source srcset="images/pfp.webp" type="image/webp">
+                    <source srcset="images/pfp.jpg" type="image/jpeg">
+                    <img src="images/pfp.jpg" alt="Profile Picture" loading="lazy">
                 </picture>
-                <figcaption>My photo <cite>Taken in Las Vegas</cite></figcaption>
+                <figcaption><cite>My Photo taken in Las Vegas</cite></figcaption>
             </figure>
         </section>
 
-        <section>
-            <h3>Code Snippet Example</h3>
-            <pre><code>console.log('Hello, World!');</code></pre>
-            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p>
-        </section>
+    <br>
 
         <aside>
             <h3>Quick Links</h3>
@@ -79,28 +75,7 @@
 
 
 
-        <custom-semantic-element>
-            Extra Section
-        </custom-semantic-element>
-
-        <blockquote>
-            <p>"E=mc<sup>2</sup>"</p>
-            <footer>- Albert Einstein</footer>
-        </blockquote>
-
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <mi>E</mi>
-            <mo>=</mo>
-            <mi>m</mi>
-            <msup>
-                <mi>c</mi>
-                <mn>2</mn>
-            </msup>
-        </math>
-
-        <noscript>
-            <p>Please enable JavaScript for full functionality.</p>
-        </noscript>
+ 
     </main>
 
     <footer>
@@ -109,10 +84,7 @@
         <small>&copy; 2025 Akhil Kalakota</small>
     </footer>
 
-    <custom-hello-world></custom-hello-world>
-    <template id="hello-world-template">
-        <p>Hello, World!</p>
-    </template>
+<br>
 
     <script>
         class HelloWorld extends HTMLElement {
