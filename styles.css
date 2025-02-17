@@ -176,6 +176,7 @@ figure:has(img) {
     margin:0;
     display: inline-block;
     border-radius: 5px;
+    width: fit-content;
 }
 
 /* Grid Layout for Projects */
