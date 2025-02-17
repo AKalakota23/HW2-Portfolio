@@ -170,7 +170,7 @@ img {
 }
 
 .hardhack-pic{
-    width: 200px; 
+    width: 400px; 
     height: auto;
     border-radius: 5px;
 }
@@ -182,22 +182,11 @@ picture img {
 }
 
 
-aside li:has(ul) {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 5px;
+section:has(h2) h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-
-
-details li:has(ul) {
-    font-weight: bold;
-    position: relative;
-}
-
-details li:has(ul) a {
-    color: var(--hover-color);
-}
 
 
 /* Grid Layout for Projects */
