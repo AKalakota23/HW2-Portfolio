@@ -163,6 +163,18 @@ img {
     border-radius: 8px;
 }
 
+.pfp{
+    width: 100px;  
+    height: auto;
+    border-radius: 5px;
+}
+
+.hardhack-pic{
+    width: 200px; 
+    height: auto;
+    border-radius: 5px;
+}
+
 picture img {
     width: 35%;
     height: auto;
@@ -176,18 +188,14 @@ figure:has(img) {
     border-radius: 5px;
 }
 
-article:has(video) {
-    border: 3px solid var(--primary-color);
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-nav li:has(ul) {
+
+details li:has(ul) {
     font-weight: bold;
     position: relative;
 }
 
-nav li:has(ul) a {
+details li:has(ul) a {
     color: var(--hover-color);
 }
 
