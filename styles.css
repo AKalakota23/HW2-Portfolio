@@ -191,6 +191,15 @@ section:has(h2) h2 {
 
 }
 
+article:has(h2){
+    background-color: #033605;    
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    padding: 7px 12px;
+    margin: 10px 0;
+}
+
+
+
 
 
 /* Grid Layout for Projects */
