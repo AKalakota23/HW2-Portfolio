@@ -170,11 +170,27 @@ picture img {
 }
 
 
-body:has(ul) {
+figure:has(img) {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
 }
+
+article:has(video) {
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav li:has(ul) {
+    font-weight: bold;
+    position: relative;
+}
+
+nav li:has(ul) a {
+    color: var(--hover-color);
+}
+
 
 /* Grid Layout for Projects */
 .projects {
