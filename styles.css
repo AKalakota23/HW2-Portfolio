@@ -178,7 +178,11 @@ figure:has(img) {
     border-radius: 5px;
     width: fit-content;
 }
-
+figure:has(img) img {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    display: block; /* Prevents extra spacing */
+}
 /* Grid Layout for Projects */
 .projects {
     display: grid;
