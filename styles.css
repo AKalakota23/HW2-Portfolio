@@ -171,18 +171,11 @@ picture img {
 
 
 figure:has(img) {
-    border: 2px solid var(--primary-color);
-    padding: 0;
-    margin:0;
-    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
     border-radius: 5px;
-    width: fit-content;
 }
-figure:has(img) img {
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    display: block; /* Prevents extra spacing */
-}
+
 /* Grid Layout for Projects */
 .projects {
     display: grid;
