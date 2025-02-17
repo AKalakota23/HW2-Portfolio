@@ -164,7 +164,7 @@ img {
 }
 
 .pfp{
-    width: 100px;  
+    width: 300px;  
     height: auto;
     border-radius: 5px;
 }
@@ -182,7 +182,7 @@ picture img {
 }
 
 
-figure:has(img) {
+aside li:has(ul) {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
